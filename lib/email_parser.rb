@@ -12,8 +12,9 @@ def initialize(email)
 end
 
 def parse
-  email.split.map {|e| e.split(",") }.flatten.uniq
-  
+ email.split.map {|e| e.split(",") }.flatten.uniq
+#^ Here we split the email attribute and then use map in order to take the each email elements into an array with the comma.
+#then we flaaten the nested array to make into an array and remove the extra email by using the uniq method.
   #binding.pry
 
 end
